@@ -20,8 +20,7 @@ public class MyBatisTest {
         SqlSession sqlSession = sqlSessionFactory.openSession();
         UserMapper userMapper = sqlSession.getMapper(UserMapper.class);
         int result = userMapper.saveUser();
-        System.out.println();
-        System.out.println(result+"=======");
+        System.out.println(result+"===");
         sqlSession.commit();
         sqlSession.close();
     }
